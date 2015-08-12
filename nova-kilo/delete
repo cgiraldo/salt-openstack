@@ -1,0 +1,2661 @@
+pitagoras:
+----------
+          ID: sudo
+    Function: group.present
+      Result: True
+     Comment: Group sudo is present and up to date
+     Started: 12:28:24.336874
+    Duration: 0.56 ms
+     Changes:   
+----------
+          ID: /etc/sudoers.d
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/sudoers.d is in the correct state
+     Started: 12:28:24.340957
+    Duration: 0.572 ms
+     Changes:   
+----------
+          ID: sudo
+    Function: pkg.installed
+      Result: True
+     Comment: Package sudo is already installed.
+     Started: 12:28:24.341926
+    Duration: 1088.878 ms
+     Changes:   
+----------
+          ID: sudoer-defaults
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:25.434143
+    Duration: 3.098 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: group.present
+        Name: cpgarrido
+      Result: True
+     Comment: Group cpgarrido is present and up to date
+     Started: 12:28:25.445029
+    Duration: 0.692 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: user.present
+        Name: cpgarrido
+      Result: True
+     Comment: User cpgarrido is present and up to date
+     Started: 12:28:25.448135
+    Duration: 1.536 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: file.directory
+        Name: /home/cpgarrido
+      Result: True
+     Comment: Directory /home/cpgarrido is in the correct state
+     Started: 12:28:25.452296
+    Duration: 0.953 ms
+     Changes:   
+----------
+          ID: ssh_auth_cpgarrido_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf cpgarrido@carlosperez
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf is already present for user cpgarrido
+     Started: 12:28:25.455870
+    Duration: 2.064 ms
+     Changes:   
+----------
+          ID: sudoer-cpgarrido
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:25.460681
+    Duration: 1.465 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: group.present
+        Name: jloureiro
+      Result: True
+     Comment: Group jloureiro is present and up to date
+     Started: 12:28:25.469784
+    Duration: 0.473 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: user.present
+        Name: jloureiro
+      Result: True
+     Comment: User jloureiro is present and up to date
+     Started: 12:28:25.472573
+    Duration: 1.075 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: file.directory
+        Name: /home/jloureiro
+      Result: True
+     Comment: Directory /home/jloureiro is in the correct state
+     Started: 12:28:25.476207
+    Duration: 0.758 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: group.present
+        Name: cgiraldo
+      Result: True
+     Comment: Group cgiraldo is present and up to date
+     Started: 12:28:25.484656
+    Duration: 0.431 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: user.present
+        Name: cgiraldo
+      Result: True
+     Comment: User cgiraldo is present and up to date
+     Started: 12:28:25.487416
+    Duration: 0.975 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: file.directory
+        Name: /home/cgiraldo
+      Result: True
+     Comment: Directory /home/cgiraldo is in the correct state
+     Started: 12:28:25.490946
+    Duration: 0.742 ms
+     Changes:   
+----------
+          ID: ssh_auth_cgiraldo_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39 is already present for user cgiraldo
+     Started: 12:28:25.494308
+    Duration: 1.357 ms
+     Changes:   
+----------
+          ID: sudoer-cgiraldo
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:25.498115
+    Duration: 1.427 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 17
+Failed:     0
+-------------
+Total states run:     17
+titan:
+----------
+          ID: sudo
+    Function: group.present
+      Result: True
+     Comment: Group sudo is present and up to date
+     Started: 12:28:19.465387
+    Duration: 0.61 ms
+     Changes:   
+----------
+          ID: /etc/sudoers.d
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/sudoers.d is in the correct state
+     Started: 12:28:19.469449
+    Duration: 0.511 ms
+     Changes:   
+----------
+          ID: sudo
+    Function: pkg.installed
+      Result: True
+     Comment: Package sudo is already installed.
+     Started: 12:28:19.470620
+    Duration: 761.318 ms
+     Changes:   
+----------
+          ID: sudoer-defaults
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.234525
+    Duration: 1.814 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: group.present
+        Name: cpgarrido
+      Result: True
+     Comment: Group cpgarrido is present and up to date
+     Started: 12:28:20.243688
+    Duration: 0.399 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: user.present
+        Name: cpgarrido
+      Result: True
+     Comment: User cpgarrido is present and up to date
+     Started: 12:28:20.246213
+    Duration: 1.15 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: file.directory
+        Name: /home/cpgarrido
+      Result: True
+     Comment: Directory /home/cpgarrido is in the correct state
+     Started: 12:28:20.249745
+    Duration: 0.783 ms
+     Changes:   
+----------
+          ID: ssh_auth_cpgarrido_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf cpgarrido@carlosperez
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf is already present for user cpgarrido
+     Started: 12:28:20.252918
+    Duration: 1.71 ms
+     Changes:   
+----------
+          ID: sudoer-cpgarrido
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.256910
+    Duration: 1.206 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: group.present
+        Name: jloureiro
+      Result: True
+     Comment: Group jloureiro is present and up to date
+     Started: 12:28:20.265349
+    Duration: 0.353 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: user.present
+        Name: jloureiro
+      Result: True
+     Comment: User jloureiro is present and up to date
+     Started: 12:28:20.267812
+    Duration: 0.899 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: file.directory
+        Name: /home/jloureiro
+      Result: True
+     Comment: Directory /home/jloureiro is in the correct state
+     Started: 12:28:20.271100
+    Duration: 0.689 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: group.present
+        Name: cgiraldo
+      Result: True
+     Comment: Group cgiraldo is present and up to date
+     Started: 12:28:20.279046
+    Duration: 0.351 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: user.present
+        Name: cgiraldo
+      Result: True
+     Comment: User cgiraldo is present and up to date
+     Started: 12:28:20.281488
+    Duration: 0.924 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: file.directory
+        Name: /home/cgiraldo
+      Result: True
+     Comment: Directory /home/cgiraldo is in the correct state
+     Started: 12:28:20.284767
+    Duration: 0.682 ms
+     Changes:   
+----------
+          ID: ssh_auth_cgiraldo_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39 is already present for user cgiraldo
+     Started: 12:28:20.287872
+    Duration: 1.234 ms
+     Changes:   
+----------
+          ID: sudoer-cgiraldo
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.291252
+    Duration: 1.163 ms
+     Changes:   
+----------
+          ID: system
+    Function: network.system
+      Result: True
+     Comment: Global network settings are up to date.
+     Started: 12:28:20.294270
+    Duration: 60.658 ms
+     Changes:   
+----------
+          ID: p1p1
+    Function: network.managed
+      Result: True
+     Comment: Interface p1p1 is up to date.
+     Started: 12:28:20.358222
+    Duration: 428.3 ms
+     Changes:   
+----------
+          ID: p1p2
+    Function: network.managed
+      Result: True
+     Comment: Interface p1p2 is up to date.
+     Started: 12:28:20.788704
+    Duration: 310.391 ms
+     Changes:   
+----------
+          ID: eth1
+    Function: network.managed
+      Result: True
+     Comment: Interface eth1 is up to date.
+     Started: 12:28:21.101187
+    Duration: 344.411 ms
+     Changes:   
+----------
+          ID: nova-compute
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 12:28:21.445811
+    Duration: 2.963 ms
+     Changes:   
+----------
+          ID: add_neutron_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-end
+      Result: True
+     Comment: Accumulator extra-nova-settings-end for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:21.464033
+    Duration: 1.049 ms
+     Changes:   
+----------
+          ID: add_default_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-DEFAULT
+      Result: True
+     Comment: Accumulator extra-nova-settings-DEFAULT for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:21.467527
+    Duration: 0.705 ms
+     Changes:   
+----------
+          ID: /etc/nova/nova.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/nova/nova.conf updated
+     Started: 12:28:21.470791
+    Duration: 62.546 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -2,8 +2,12 @@
+                   [DEFAULT]
+                   api_paste_config = /etc/nova/api-paste.ini
+                   auth_strategy = keystone
+                  +dhcpbridge = /usr/bin/nova-dhcpbridge
+                  +dhcpbridge_flagfile = /etc/nova/nova.conf
+                   ec2_private_dns_show_ip = True
+                   enabled_apis = ec2,osapi_compute,metadata
+                  +force_dhcp_release = True
+                  +libvirt_use_virtio_for_bridges = True
+                   lock_path = /var/lock/nova
+                   logdir = /var/log/nova
+                   my_ip = 10.0.0.11
+----------
+          ID: nova-compute
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:21.562904
+    Duration: 937.868 ms
+     Changes:   
+              ----------
+              nova-compute:
+                  True
+----------
+          ID: ubuntu-cloud-keyring
+    Function: pkg.installed
+      Result: True
+     Comment: Package ubuntu-cloud-keyring is already installed.
+     Started: 12:28:22.501031
+    Duration: 0.951 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: pkg.installed
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 12:28:22.502094
+    Duration: 0.455 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: service.running
+      Result: True
+     Comment: The service ntp is already running
+     Started: 12:28:22.505242
+    Duration: 25.416 ms
+     Changes:   
+----------
+          ID: kilo
+    Function: pkgrepo.managed
+        Name: deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main
+      Result: True
+     Comment: Package repo 'deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main' already configured
+     Started: 12:28:22.535495
+    Duration: 175.134 ms
+     Changes:   
+----------
+          ID: net.bridge.bridge-nf-call-iptables
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.bridge.bridge-nf-call-iptables = 1 is already set
+     Started: 12:28:22.716371
+    Duration: 79.291 ms
+     Changes:   
+----------
+          ID: net.bridge.bridge-nf-call-ip6tables
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.bridge.bridge-nf-call-ip6tables = 1 is already set
+     Started: 12:28:22.799273
+    Duration: 65.783 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.all.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.all.rp_filter = 0 is already set
+     Started: 12:28:22.867772
+    Duration: 62.673 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 0 is already set
+     Started: 12:28:22.932621
+    Duration: 61.909 ms
+     Changes:   
+----------
+          ID: neutron-plugin-ml2
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-ml2 is already installed.
+     Started: 12:28:22.996252
+    Duration: 0.866 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-openvswitch-agent is already installed.
+     Started: 12:28:22.997519
+    Duration: 0.493 ms
+     Changes:   
+----------
+          ID: /etc/neutron/plugins/ml2/ml2_conf.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/plugins/ml2/ml2_conf.ini is in the correct state
+     Started: 12:28:23.006120
+    Duration: 6.003 ms
+     Changes:   
+----------
+          ID: /etc/neutron/neutron.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/neutron.conf is in the correct state
+     Started: 12:28:23.014056
+    Duration: 6.487 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-plugin-openvswitch-agent is already enabled, and is in the desired state
+     Started: 12:28:23.023890
+    Duration: 26.6 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 39 (changed=2)
+Failed:     0
+-------------
+Total states run:     39
+pluton:
+----------
+          ID: sudo
+    Function: group.present
+      Result: True
+     Comment: Group sudo is present and up to date
+     Started: 12:28:19.579326
+    Duration: 0.492 ms
+     Changes:   
+----------
+          ID: /etc/sudoers.d
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/sudoers.d is in the correct state
+     Started: 12:28:19.583399
+    Duration: 0.471 ms
+     Changes:   
+----------
+          ID: sudo
+    Function: pkg.installed
+      Result: True
+     Comment: Package sudo is already installed.
+     Started: 12:28:19.584574
+    Duration: 927.979 ms
+     Changes:   
+----------
+          ID: sudoer-defaults
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.515255
+    Duration: 1.829 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: group.present
+        Name: cpgarrido
+      Result: True
+     Comment: Group cpgarrido is present and up to date
+     Started: 12:28:20.524863
+    Duration: 0.392 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: user.present
+        Name: cpgarrido
+      Result: True
+     Comment: User cpgarrido is present and up to date
+     Started: 12:28:20.527429
+    Duration: 1.133 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: file.directory
+        Name: /home/cpgarrido
+      Result: True
+     Comment: Directory /home/cpgarrido is in the correct state
+     Started: 12:28:20.531106
+    Duration: 0.738 ms
+     Changes:   
+----------
+          ID: ssh_auth_cpgarrido_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf cpgarrido@carlosperez
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf is already present for user cpgarrido
+     Started: 12:28:20.534427
+    Duration: 1.612 ms
+     Changes:   
+----------
+          ID: sudoer-cpgarrido
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.538497
+    Duration: 1.168 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: group.present
+        Name: jloureiro
+      Result: True
+     Comment: Group jloureiro is present and up to date
+     Started: 12:28:20.547350
+    Duration: 0.332 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: user.present
+        Name: jloureiro
+      Result: True
+     Comment: User jloureiro is present and up to date
+     Started: 12:28:20.549911
+    Duration: 0.893 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: file.directory
+        Name: /home/jloureiro
+      Result: True
+     Comment: Directory /home/jloureiro is in the correct state
+     Started: 12:28:20.553377
+    Duration: 0.686 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: group.present
+        Name: cgiraldo
+      Result: True
+     Comment: Group cgiraldo is present and up to date
+     Started: 12:28:20.561719
+    Duration: 0.323 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: user.present
+        Name: cgiraldo
+      Result: True
+     Comment: User cgiraldo is present and up to date
+     Started: 12:28:20.564244
+    Duration: 0.896 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: file.directory
+        Name: /home/cgiraldo
+      Result: True
+     Comment: Directory /home/cgiraldo is in the correct state
+     Started: 12:28:20.567650
+    Duration: 0.678 ms
+     Changes:   
+----------
+          ID: ssh_auth_cgiraldo_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39 is already present for user cgiraldo
+     Started: 12:28:20.570836
+    Duration: 1.204 ms
+     Changes:   
+----------
+          ID: sudoer-cgiraldo
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.574314
+    Duration: 1.142 ms
+     Changes:   
+----------
+          ID: system
+    Function: network.system
+      Result: True
+     Comment: Global network settings are up to date.
+     Started: 12:28:20.577393
+    Duration: 58.796 ms
+     Changes:   
+----------
+          ID: eth0
+    Function: network.managed
+      Result: True
+     Comment: Interface eth0 is up to date.
+     Started: 12:28:20.638336
+    Duration: 460.15 ms
+     Changes:   
+----------
+          ID: eth1
+    Function: network.managed
+      Result: True
+     Comment: Interface eth1 is up to date.
+     Started: 12:28:21.100694
+    Duration: 353.146 ms
+     Changes:   
+----------
+          ID: eth2
+    Function: network.managed
+      Result: True
+     Comment: Interface eth2 is up to date.
+     Started: 12:28:21.456414
+    Duration: 356.722 ms
+     Changes:   
+----------
+          ID: nova-compute
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 12:28:21.813287
+    Duration: 0.914 ms
+     Changes:   
+----------
+          ID: add_neutron_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-end
+      Result: True
+     Comment: Accumulator extra-nova-settings-end for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:21.824758
+    Duration: 0.562 ms
+     Changes:   
+----------
+          ID: add_default_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-DEFAULT
+      Result: True
+     Comment: Accumulator extra-nova-settings-DEFAULT for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:21.827214
+    Duration: 0.559 ms
+     Changes:   
+----------
+          ID: /etc/nova/nova.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/nova/nova.conf updated
+     Started: 12:28:21.830464
+    Duration: 64.761 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -2,8 +2,12 @@
+                   [DEFAULT]
+                   api_paste_config = /etc/nova/api-paste.ini
+                   auth_strategy = keystone
+                  +dhcpbridge = /usr/bin/nova-dhcpbridge
+                  +dhcpbridge_flagfile = /etc/nova/nova.conf
+                   ec2_private_dns_show_ip = True
+                   enabled_apis = ec2,osapi_compute,metadata
+                  +force_dhcp_release = True
+                  +libvirt_use_virtio_for_bridges = True
+                   lock_path = /var/lock/nova
+                   logdir = /var/log/nova
+                   my_ip = 10.0.0.12
+----------
+          ID: nova-compute
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:21.929730
+    Duration: 1132.813 ms
+     Changes:   
+              ----------
+              nova-compute:
+                  True
+----------
+          ID: ubuntu-cloud-keyring
+    Function: pkg.installed
+      Result: True
+     Comment: Package ubuntu-cloud-keyring is already installed.
+     Started: 12:28:23.062817
+    Duration: 1.079 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: pkg.installed
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 12:28:23.064006
+    Duration: 0.573 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: service.running
+      Result: True
+     Comment: The service ntp is already running
+     Started: 12:28:23.067768
+    Duration: 28.194 ms
+     Changes:   
+----------
+          ID: kilo
+    Function: pkgrepo.managed
+        Name: deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main
+      Result: True
+     Comment: Package repo 'deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main' already configured
+     Started: 12:28:23.099521
+    Duration: 49.634 ms
+     Changes:   
+----------
+          ID: net.bridge.bridge-nf-call-iptables
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.bridge.bridge-nf-call-iptables = 1 is already set
+     Started: 12:28:23.155311
+    Duration: 55.479 ms
+     Changes:   
+----------
+          ID: net.bridge.bridge-nf-call-ip6tables
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.bridge.bridge-nf-call-ip6tables = 1 is already set
+     Started: 12:28:23.213080
+    Duration: 56.315 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.all.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.all.rp_filter = 0 is already set
+     Started: 12:28:23.271665
+    Duration: 54.035 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 0 is already set
+     Started: 12:28:23.327976
+    Duration: 54.379 ms
+     Changes:   
+----------
+          ID: neutron-plugin-ml2
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-ml2 is already installed.
+     Started: 12:28:23.384443
+    Duration: 0.885 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-openvswitch-agent is already installed.
+     Started: 12:28:23.385748
+    Duration: 0.426 ms
+     Changes:   
+----------
+          ID: /etc/neutron/plugins/ml2/ml2_conf.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/plugins/ml2/ml2_conf.ini is in the correct state
+     Started: 12:28:23.394399
+    Duration: 6.648 ms
+     Changes:   
+----------
+          ID: /etc/neutron/neutron.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/neutron.conf is in the correct state
+     Started: 12:28:23.403250
+    Duration: 6.994 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-plugin-openvswitch-agent is already enabled, and is in the desired state
+     Started: 12:28:23.413826
+    Duration: 32.988 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 39 (changed=2)
+Failed:     0
+-------------
+Total states run:     39
+neptuno:
+----------
+          ID: sudo
+    Function: group.present
+      Result: True
+     Comment: Group sudo is present and up to date
+     Started: 12:28:19.710434
+    Duration: 0.496 ms
+     Changes:   
+----------
+          ID: /etc/sudoers.d
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/sudoers.d is in the correct state
+     Started: 12:28:19.714461
+    Duration: 0.467 ms
+     Changes:   
+----------
+          ID: sudo
+    Function: pkg.installed
+      Result: True
+     Comment: Package sudo is already installed.
+     Started: 12:28:19.715618
+    Duration: 920.698 ms
+     Changes:   
+----------
+          ID: sudoer-defaults
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.638925
+    Duration: 1.807 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: group.present
+        Name: cpgarrido
+      Result: True
+     Comment: Group cpgarrido is present and up to date
+     Started: 12:28:20.648368
+    Duration: 0.396 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: user.present
+        Name: cpgarrido
+      Result: True
+     Comment: User cpgarrido is present and up to date
+     Started: 12:28:20.650955
+    Duration: 1.139 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: file.directory
+        Name: /home/cpgarrido
+      Result: True
+     Comment: Directory /home/cpgarrido is in the correct state
+     Started: 12:28:20.654548
+    Duration: 0.746 ms
+     Changes:   
+----------
+          ID: ssh_auth_cpgarrido_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf cpgarrido@carlosperez
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf is already present for user cpgarrido
+     Started: 12:28:20.657792
+    Duration: 1.631 ms
+     Changes:   
+----------
+          ID: sudoer-cpgarrido
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.661796
+    Duration: 1.152 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: group.present
+        Name: jloureiro
+      Result: True
+     Comment: Group jloureiro is present and up to date
+     Started: 12:28:20.670530
+    Duration: 0.326 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: user.present
+        Name: jloureiro
+      Result: True
+     Comment: User jloureiro is present and up to date
+     Started: 12:28:20.673040
+    Duration: 0.893 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: file.directory
+        Name: /home/jloureiro
+      Result: True
+     Comment: Directory /home/jloureiro is in the correct state
+     Started: 12:28:20.676426
+    Duration: 0.688 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: group.present
+        Name: cgiraldo
+      Result: True
+     Comment: Group cgiraldo is present and up to date
+     Started: 12:28:20.684653
+    Duration: 0.318 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: user.present
+        Name: cgiraldo
+      Result: True
+     Comment: User cgiraldo is present and up to date
+     Started: 12:28:20.687129
+    Duration: 0.895 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: file.directory
+        Name: /home/cgiraldo
+      Result: True
+     Comment: Directory /home/cgiraldo is in the correct state
+     Started: 12:28:20.690456
+    Duration: 0.66 ms
+     Changes:   
+----------
+          ID: ssh_auth_cgiraldo_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39 is already present for user cgiraldo
+     Started: 12:28:20.693622
+    Duration: 1.203 ms
+     Changes:   
+----------
+          ID: sudoer-cgiraldo
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.697047
+    Duration: 1.134 ms
+     Changes:   
+----------
+          ID: system
+    Function: network.system
+      Result: True
+     Comment: Global network settings are up to date.
+     Started: 12:28:20.700122
+    Duration: 59.788 ms
+     Changes:   
+----------
+          ID: eth0
+    Function: network.managed
+      Result: True
+     Comment: Interface eth0 is up to date.
+     Started: 12:28:20.761996
+    Duration: 474.896 ms
+     Changes:   
+----------
+          ID: eth1
+    Function: network.managed
+      Result: True
+     Comment: Interface eth1 is up to date.
+     Started: 12:28:21.239077
+    Duration: 392.063 ms
+     Changes:   
+----------
+          ID: eth2
+    Function: network.managed
+      Result: True
+     Comment: Interface eth2 is up to date.
+     Started: 12:28:21.633385
+    Duration: 385.615 ms
+     Changes:   
+----------
+          ID: nova-compute
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 12:28:22.019166
+    Duration: 1.044 ms
+     Changes:   
+----------
+          ID: add_neutron_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-end
+      Result: True
+     Comment: Accumulator extra-nova-settings-end for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:22.030391
+    Duration: 0.545 ms
+     Changes:   
+----------
+          ID: add_default_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-DEFAULT
+      Result: True
+     Comment: Accumulator extra-nova-settings-DEFAULT for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:22.032792
+    Duration: 0.555 ms
+     Changes:   
+----------
+          ID: /etc/nova/nova.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/nova/nova.conf updated
+     Started: 12:28:22.035988
+    Duration: 61.451 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -2,8 +2,12 @@
+                   [DEFAULT]
+                   api_paste_config = /etc/nova/api-paste.ini
+                   auth_strategy = keystone
+                  +dhcpbridge = /usr/bin/nova-dhcpbridge
+                  +dhcpbridge_flagfile = /etc/nova/nova.conf
+                   ec2_private_dns_show_ip = True
+                   enabled_apis = ec2,osapi_compute,metadata
+                  +force_dhcp_release = True
+                  +libvirt_use_virtio_for_bridges = True
+                   lock_path = /var/lock/nova
+                   logdir = /var/log/nova
+                   my_ip = 10.0.0.13
+----------
+          ID: nova-compute
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:22.132671
+    Duration: 1155.901 ms
+     Changes:   
+              ----------
+              nova-compute:
+                  True
+----------
+          ID: ubuntu-cloud-keyring
+    Function: pkg.installed
+      Result: True
+     Comment: Package ubuntu-cloud-keyring is already installed.
+     Started: 12:28:23.288844
+    Duration: 1.026 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: pkg.installed
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 12:28:23.289976
+    Duration: 0.492 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: service.running
+      Result: True
+     Comment: The service ntp is already running
+     Started: 12:28:23.293981
+    Duration: 27.842 ms
+     Changes:   
+----------
+          ID: kilo
+    Function: pkgrepo.managed
+        Name: deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main
+      Result: True
+     Comment: Package repo 'deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main' already configured
+     Started: 12:28:23.325297
+    Duration: 57.36 ms
+     Changes:   
+----------
+          ID: net.bridge.bridge-nf-call-iptables
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.bridge.bridge-nf-call-iptables = 1 is already set
+     Started: 12:28:23.388726
+    Duration: 55.462 ms
+     Changes:   
+----------
+          ID: net.bridge.bridge-nf-call-ip6tables
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.bridge.bridge-nf-call-ip6tables = 1 is already set
+     Started: 12:28:23.446356
+    Duration: 56.942 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.all.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.all.rp_filter = 0 is already set
+     Started: 12:28:23.505517
+    Duration: 57.538 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 0 is already set
+     Started: 12:28:23.565567
+    Duration: 58.642 ms
+     Changes:   
+----------
+          ID: neutron-plugin-ml2
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-ml2 is already installed.
+     Started: 12:28:23.626194
+    Duration: 0.977 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-openvswitch-agent is already installed.
+     Started: 12:28:23.627662
+    Duration: 0.5 ms
+     Changes:   
+----------
+          ID: /etc/neutron/plugins/ml2/ml2_conf.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/plugins/ml2/ml2_conf.ini is in the correct state
+     Started: 12:28:23.637285
+    Duration: 5.809 ms
+     Changes:   
+----------
+          ID: /etc/neutron/neutron.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/neutron.conf is in the correct state
+     Started: 12:28:23.645047
+    Duration: 7.207 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-plugin-openvswitch-agent is already enabled, and is in the desired state
+     Started: 12:28:23.656157
+    Duration: 33.437 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 39 (changed=2)
+Failed:     0
+-------------
+Total states run:     39
+apu:
+----------
+          ID: sudo
+    Function: group.present
+      Result: True
+     Comment: Group sudo is present and up to date
+     Started: 12:28:22.170431
+    Duration: 1.638 ms
+     Changes:   
+----------
+          ID: /etc/sudoers.d
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/sudoers.d is in the correct state
+     Started: 12:28:22.186147
+    Duration: 1.89 ms
+     Changes:   
+----------
+          ID: sudo
+    Function: pkg.installed
+      Result: True
+     Comment: Package sudo is already installed.
+     Started: 12:28:22.191209
+    Duration: 2912.784 ms
+     Changes:   
+----------
+          ID: sudoer-defaults
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:25.112942
+    Duration: 5.583 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: group.present
+        Name: cpgarrido
+      Result: True
+     Comment: Group cpgarrido is present and up to date
+     Started: 12:28:25.148119
+    Duration: 1.443 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: user.present
+        Name: cpgarrido
+      Result: True
+     Comment: User cpgarrido is present and up to date
+     Started: 12:28:25.158099
+    Duration: 4.016 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: file.directory
+        Name: /home/cpgarrido
+      Result: True
+     Comment: Directory /home/cpgarrido is in the correct state
+     Started: 12:28:25.171764
+    Duration: 2.907 ms
+     Changes:   
+----------
+          ID: ssh_auth_cpgarrido_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf cpgarrido@carlosperez
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf is already present for user cpgarrido
+     Started: 12:28:25.184494
+    Duration: 6.106 ms
+     Changes:   
+----------
+          ID: sudoer-cpgarrido
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:25.199736
+    Duration: 4.644 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: group.present
+        Name: jloureiro
+      Result: True
+     Comment: Group jloureiro is present and up to date
+     Started: 12:28:25.233854
+    Duration: 1.516 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: user.present
+        Name: jloureiro
+      Result: True
+     Comment: User jloureiro is present and up to date
+     Started: 12:28:25.243672
+    Duration: 3.653 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: file.directory
+        Name: /home/jloureiro
+      Result: True
+     Comment: Directory /home/jloureiro is in the correct state
+     Started: 12:28:25.257068
+    Duration: 2.8 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: group.present
+        Name: cgiraldo
+      Result: True
+     Comment: Group cgiraldo is present and up to date
+     Started: 12:28:25.289398
+    Duration: 1.486 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: user.present
+        Name: cgiraldo
+      Result: True
+     Comment: User cgiraldo is present and up to date
+     Started: 12:28:25.299290
+    Duration: 3.607 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: file.directory
+        Name: /home/cgiraldo
+      Result: True
+     Comment: Directory /home/cgiraldo is in the correct state
+     Started: 12:28:25.312542
+    Duration: 2.704 ms
+     Changes:   
+----------
+          ID: ssh_auth_cgiraldo_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39 is already present for user cgiraldo
+     Started: 12:28:25.324914
+    Duration: 4.67 ms
+     Changes:   
+----------
+          ID: sudoer-cgiraldo
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:25.338065
+    Duration: 4.573 ms
+     Changes:   
+----------
+          ID: system
+    Function: network.system
+      Result: True
+     Comment: Global network settings are up to date.
+     Started: 12:28:25.349552
+    Duration: 156.955 ms
+     Changes:   
+----------
+          ID: p4p1
+    Function: network.managed
+      Result: True
+     Comment: Interface p4p1 is up to date.
+     Started: 12:28:25.513549
+    Duration: 1059.201 ms
+     Changes:   
+----------
+          ID: p5p1
+    Function: network.managed
+      Result: True
+     Comment: Interface p5p1 is up to date.
+     Started: 12:28:26.581849
+    Duration: 684.361 ms
+     Changes:   
+----------
+          ID: p6p1
+    Function: network.managed
+      Result: True
+     Comment: Interface p6p1 is up to date.
+     Started: 12:28:27.275195
+    Duration: 713.194 ms
+     Changes:   
+----------
+          ID: ubuntu-cloud-keyring
+    Function: pkg.installed
+      Result: True
+     Comment: Package ubuntu-cloud-keyring is already installed.
+     Started: 12:28:27.989732
+    Duration: 3.082 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: pkg.installed
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 12:28:27.993245
+    Duration: 2.061 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: service.running
+      Result: True
+     Comment: The service ntp is already running
+     Started: 12:28:28.004468
+    Duration: 63.411 ms
+     Changes:   
+----------
+          ID: kilo
+    Function: pkgrepo.managed
+        Name: deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main
+      Result: True
+     Comment: Package repo 'deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main' already configured
+     Started: 12:28:28.078312
+    Duration: 244.564 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 1 is already set
+     Started: 12:28:28.349235
+    Duration: 184.873 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.all.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.all.rp_filter = 0 is already set
+     Started: 12:28:28.541451
+    Duration: 123.545 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 0 is already set
+     Started: 12:28:28.672373
+    Duration: 120.69 ms
+     Changes:   
+----------
+          ID: neutron-plugin-ml2
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-ml2 is already installed.
+     Started: 12:28:28.800559
+    Duration: 2.883 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-plugin-openvswitch-agent is already installed.
+     Started: 12:28:28.805263
+    Duration: 2.0 ms
+     Changes:   
+----------
+          ID: /etc/neutron/neutron.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/neutron.conf is in the correct state
+     Started: 12:28:28.831098
+    Duration: 26.614 ms
+     Changes:   
+----------
+          ID: neutron-plugin-openvswitch-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-plugin-openvswitch-agent is already enabled, and is in the desired state
+     Started: 12:28:28.869118
+    Duration: 89.144 ms
+     Changes:   
+----------
+          ID: neutron-l3-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-l3-agent is already installed.
+     Started: 12:28:28.960402
+    Duration: 2.589 ms
+     Changes:   
+----------
+          ID: /etc/neutron/l3_agent.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/l3_agent.ini is in the correct state
+     Started: 12:28:28.987753
+    Duration: 7.099 ms
+     Changes:   
+----------
+          ID: neutron-l3-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-l3-agent is already enabled, and is in the desired state
+     Started: 12:28:29.008767
+    Duration: 88.835 ms
+     Changes:   
+----------
+          ID: neutron-dhcp-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-dhcp-agent is already installed.
+     Started: 12:28:29.099909
+    Duration: 2.766 ms
+     Changes:   
+----------
+          ID: /etc/neutron/dnsmasq-neutron.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/dnsmasq-neutron.conf is in the correct state
+     Started: 12:28:29.141758
+    Duration: 13.608 ms
+     Changes:   
+----------
+          ID: /etc/neutron/dhcp_agent.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/dhcp_agent.ini is in the correct state
+     Started: 12:28:29.165538
+    Duration: 6.431 ms
+     Changes:   
+----------
+          ID: neutron-dhcp-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-dhcp-agent is already enabled, and is in the desired state
+     Started: 12:28:29.183059
+    Duration: 90.728 ms
+     Changes:   
+----------
+          ID: neutron-metadata-agent
+    Function: pkg.installed
+      Result: True
+     Comment: Package neutron-metadata-agent is already installed.
+     Started: 12:28:29.275933
+    Duration: 2.57 ms
+     Changes:   
+----------
+          ID: /etc/neutron/metadata_agent.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/metadata_agent.ini is in the correct state
+     Started: 12:28:29.303501
+    Duration: 27.52 ms
+     Changes:   
+----------
+          ID: neutron-metadata-agent
+    Function: service.running
+      Result: True
+     Comment: Service neutron-metadata-agent is already enabled, and is in the desired state
+     Started: 12:28:29.342449
+    Duration: 89.717 ms
+     Changes:   
+----------
+          ID: ethtool
+    Function: pkg.installed
+      Result: True
+     Comment: Package ethtool is already installed.
+     Started: 12:28:29.432727
+    Duration: 2.586 ms
+     Changes:   
+----------
+          ID: br-ex
+    Function: cmd.run
+        Name: ovs-vsctl br-exists br-ex || ovs-vsctl add-br br-ex;
+ovs-vsctl add-port br-ex p6p1;
+ethtool -K p6p1 gro off
+
+      Result: True
+     Comment: Command "ovs-vsctl br-exists br-ex || ovs-vsctl add-br br-ex;
+              ovs-vsctl add-port br-ex p6p1;
+              ethtool -K p6p1 gro off
+              " run
+     Started: 12:28:29.446239
+    Duration: 49.365 ms
+     Changes:   
+              ----------
+              pid:
+                  13732
+              retcode:
+                  0
+              stderr:
+                  ovs-vsctl: cannot create a port named p6p1 because a port named p6p1 already exists on bridge br-ex
+              stdout:
+----------
+          ID: /etc/neutron/plugins/ml2/ml2_conf.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/plugins/ml2/ml2_conf.ini is in the correct state
+     Started: 12:28:29.505794
+    Duration: 15.79 ms
+     Changes:   
+----------
+          ID: kill_dnsmasq
+    Function: cmd.wait
+        Name: pkill dnsmasq
+      Result: True
+     Comment: 
+     Started: 12:28:29.530134
+    Duration: 1.17 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 46 (changed=1)
+Failed:     0
+-------------
+Total states run:     46
+colosus:
+----------
+          ID: sudo
+    Function: group.present
+      Result: True
+     Comment: Group sudo is present and up to date
+     Started: 12:28:19.644557
+    Duration: 0.487 ms
+     Changes:   
+----------
+          ID: /etc/sudoers.d
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/sudoers.d is in the correct state
+     Started: 12:28:19.650518
+    Duration: 0.443 ms
+     Changes:   
+----------
+          ID: sudo
+    Function: pkg.installed
+      Result: True
+     Comment: Package sudo is already installed.
+     Started: 12:28:19.652632
+    Duration: 917.673 ms
+     Changes:   
+----------
+          ID: sudoer-defaults
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.573325
+    Duration: 1.541 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: group.present
+        Name: cpgarrido
+      Result: True
+     Comment: Group cpgarrido is present and up to date
+     Started: 12:28:20.585251
+    Duration: 0.355 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: user.present
+        Name: cpgarrido
+      Result: True
+     Comment: User cpgarrido is present and up to date
+     Started: 12:28:20.588225
+    Duration: 1.066 ms
+     Changes:   
+----------
+          ID: cpgarrido_user
+    Function: file.directory
+        Name: /home/cpgarrido
+      Result: True
+     Comment: Directory /home/cpgarrido is in the correct state
+     Started: 12:28:20.592716
+    Duration: 0.713 ms
+     Changes:   
+----------
+          ID: ssh_auth_cpgarrido_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf cpgarrido@carlosperez
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQC0xx2nXyYFrAyVIa2dyH5lIXpWtqKoBH1Gd7+w7jxdmXI1ZCZZyETyN999IvWXHJ+hBeEhG8AEAwmzMlxKjpLQ/PmkHhHhxtD6ut+rbKG7LHmF4g4DgvucLDGW3dGPA5+ExRTFUsxJx+WtCDl7ImQHYCKM+LpP6xv/WeFF79EpMiMsnMR9iJw9h1wrTtffOnDv2f8S0Yuv+oICc/ap4OyQV5yS6gbxUSo57/KIj6nASVtiVawA9vTgocmcWT9u/C7jLexkCbkJ4kRmcoYPJGvT02uuFQbOLhv5ffiu4tBPq1FlB/XoaW1FpoBixF+o7szLqDQn/6B0jPvH44llMKlf is already present for user cpgarrido
+     Started: 12:28:20.596890
+    Duration: 1.529 ms
+     Changes:   
+----------
+          ID: sudoer-cpgarrido
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.601247
+    Duration: 1.111 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: group.present
+        Name: jloureiro
+      Result: True
+     Comment: Group jloureiro is present and up to date
+     Started: 12:28:20.612730
+    Duration: 0.316 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: user.present
+        Name: jloureiro
+      Result: True
+     Comment: User jloureiro is present and up to date
+     Started: 12:28:20.615622
+    Duration: 0.891 ms
+     Changes:   
+----------
+          ID: jloureiro_user
+    Function: file.directory
+        Name: /home/jloureiro
+      Result: True
+     Comment: Directory /home/jloureiro is in the correct state
+     Started: 12:28:20.619878
+    Duration: 0.698 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: group.present
+        Name: cgiraldo
+      Result: True
+     Comment: Group cgiraldo is present and up to date
+     Started: 12:28:20.630933
+    Duration: 0.314 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: user.present
+        Name: cgiraldo
+      Result: True
+     Comment: User cgiraldo is present and up to date
+     Started: 12:28:20.633862
+    Duration: 0.856 ms
+     Changes:   
+----------
+          ID: cgiraldo_user
+    Function: file.directory
+        Name: /home/cgiraldo
+      Result: True
+     Comment: Directory /home/cgiraldo is in the correct state
+     Started: 12:28:20.638091
+    Duration: 0.657 ms
+     Changes:   
+----------
+          ID: ssh_auth_cgiraldo_0
+    Function: ssh_auth.present
+        Name: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39
+      Result: True
+     Comment: The authorized host key AAAAB3NzaC1yc2EAAAADAQABAAABAQDxoJ1O7xtGdBZg1H1uafrv3tpecVcDI8OHcj0jF52LPvtKMrxlKhWyD83czaUrIjjeLFCqFdlBDdeUoW8BAoFHak55j/4FtwD9cExI0VOI65d40pgcF7Q5vwNlMjM6j6frosepMnA+O3FTqBbZg5TZ67Y4JQJxd+4dWlN/XcBZPZawpQEDrOZzN5J1vzE5SS7aIA7FB+V1THmEY5VKvDEX7CWRvfwmKhHVXXHwcVt2aYC8opgnpwPwc70zzicZZ4GsnxrXm6DrBjYtgLk7EUo7XWOm6faaigxqu6UR1RTF//BscZryyz+74GG6eHwRh/MueOt0Lck9OpnOCKoRMW39 is already present for user cgiraldo
+     Started: 12:28:20.642223
+    Duration: 1.191 ms
+     Changes:   
+----------
+          ID: sudoer-cgiraldo
+    Function: file.append
+        Name: /etc/sudoers
+      Result: True
+     Comment: File /etc/sudoers is in correct state
+     Started: 12:28:20.646095
+    Duration: 1.102 ms
+     Changes:   
+----------
+          ID: system
+    Function: network.system
+      Result: True
+     Comment: Global network settings are up to date.
+     Started: 12:28:20.649061
+    Duration: 47.436 ms
+     Changes:   
+----------
+          ID: eth0
+    Function: network.managed
+      Result: True
+     Comment: Interface eth0 is up to date.
+     Started: 12:28:20.698481
+    Duration: 351.571 ms
+     Changes:   
+----------
+          ID: eth1
+    Function: network.managed
+      Result: True
+     Comment: Interface eth1 is up to date.
+     Started: 12:28:21.052192
+    Duration: 270.436 ms
+     Changes:   
+----------
+          ID: get-mariadb-repo
+    Function: pkgrepo.managed
+        Name: deb http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.0/ubuntu trusty main
+      Result: True
+     Comment: Package repo 'deb http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.0/ubuntu trusty main' already configured
+     Started: 12:28:21.326350
+    Duration: 59.526 ms
+     Changes:   
+----------
+          ID: mariadb-server
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 12:28:21.386639
+    Duration: 0.77 ms
+     Changes:   
+----------
+          ID: mariadb-server
+    Function: service.running
+        Name: mysql
+      Result: True
+     Comment: Service mysql is already enabled, and is in the desired state
+     Started: 12:28:21.390320
+    Duration: 28.444 ms
+     Changes:   
+----------
+          ID: mariadb-server
+    Function: mysql_user.present
+        Name: root
+      Result: True
+     Comment: User root@localhost is already present with the desired password
+     Started: 12:28:21.422070
+    Duration: 4.892 ms
+     Changes:   
+----------
+          ID: remove_test_db
+    Function: mysql_database.absent
+        Name: test
+      Result: True
+     Comment: Database test is not present, so it cannot be removed
+     Started: 12:28:21.428895
+    Duration: 0.918 ms
+     Changes:   
+----------
+          ID: remove_test_db_all
+    Function: mysql_database.absent
+        Name: test_%
+      Result: True
+     Comment: Database test_% is not present, so it cannot be removed
+     Started: 12:28:21.431647
+    Duration: 1.423 ms
+     Changes:   
+----------
+          ID: remove_anonymous_user
+    Function: mysql_user.absent
+        Name: 
+      Result: True
+     Comment: User @localhost is not present, so it cannot be removed
+     Started: 12:28:21.435049
+    Duration: 1.079 ms
+     Changes:   
+----------
+          ID: rabbitmq-server
+    Function: pkg.installed
+      Result: True
+     Comment: Package rabbitmq-server is already installed.
+     Started: 12:28:21.436218
+    Duration: 0.764 ms
+     Changes:   
+----------
+          ID: rabbitmq-server
+    Function: service.running
+      Result: True
+     Comment: The service rabbitmq-server is already running
+     Started: 12:28:21.439986
+    Duration: 395.647 ms
+     Changes:   
+----------
+          ID: keystone-db
+    Function: mysql_database.present
+        Name: keystone
+      Result: True
+     Comment: Database keystone is already present
+     Started: 12:28:21.837791
+    Duration: 1.417 ms
+     Changes:   
+----------
+          ID: keystone-db
+    Function: mysql_user.present
+        Name: keystone
+      Result: True
+     Comment: User keystone@localhost is already present with the desired password
+     Started: 12:28:21.841070
+    Duration: 0.975 ms
+     Changes:   
+----------
+          ID: keystone-db
+    Function: mysql_grants.present
+      Result: True
+     Comment: Grant all privileges on keystone.* to keystone@localhost is already present
+     Started: 12:28:21.843877
+    Duration: 2.857 ms
+     Changes:   
+----------
+          ID: /root/admin-openrc.sh
+    Function: file.managed
+      Result: True
+     Comment: File /root/admin-openrc.sh is in the correct state
+     Started: 12:28:21.848758
+    Duration: 6.057 ms
+     Changes:   
+----------
+          ID: /root/demo-openrc.sh
+    Function: file.managed
+      Result: True
+     Comment: File /root/demo-openrc.sh is in the correct state
+     Started: 12:28:21.856697
+    Duration: 2.48 ms
+     Changes:   
+----------
+          ID: ubuntu-cloud-keyring
+    Function: pkg.installed
+      Result: True
+     Comment: Package ubuntu-cloud-keyring is already installed.
+     Started: 12:28:21.859263
+    Duration: 0.709 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: pkg.installed
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 12:28:21.860071
+    Duration: 0.411 ms
+     Changes:   
+----------
+          ID: ntp
+    Function: service.running
+      Result: True
+     Comment: The service ntp is already running
+     Started: 12:28:21.863457
+    Duration: 20.982 ms
+     Changes:   
+----------
+          ID: kilo
+    Function: pkgrepo.managed
+        Name: deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main
+      Result: True
+     Comment: Package repo 'deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/kilo main' already configured
+     Started: 12:28:21.887926
+    Duration: 52.158 ms
+     Changes:   
+----------
+          ID: /etc/init/keystone.override
+    Function: file.managed
+      Result: True
+     Comment: File /etc/init/keystone.override is in the correct state
+     Started: 12:28:21.945201
+    Duration: 3.219 ms
+     Changes:   
+----------
+          ID: keystone
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 12:28:21.949880
+    Duration: 0.796 ms
+     Changes:   
+----------
+          ID: /etc/apache2/sites-available/wsgi-keystone.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/apache2/sites-available/wsgi-keystone.conf is in the correct state
+     Started: 12:28:21.964745
+    Duration: 2.053 ms
+     Changes:   
+----------
+          ID: /etc/apache2/apache2.conf
+    Function: file.append
+      Result: True
+     Comment: File /etc/apache2/apache2.conf is in correct state
+     Started: 12:28:21.969497
+    Duration: 1.162 ms
+     Changes:   
+----------
+          ID: /etc/keystone/keystone.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/keystone/keystone.conf is in the correct state
+     Started: 12:28:21.973274
+    Duration: 26.359 ms
+     Changes:   
+----------
+          ID: keystone
+    Function: service.running
+        Name: apache2
+      Result: True
+     Comment: Service apache2 is already enabled, and is in the desired state
+     Started: 12:28:22.006078
+    Duration: 25.828 ms
+     Changes:   
+----------
+          ID: keystone_sync_db
+    Function: cmd.run
+        Name: keystone-manage db_sync
+      Result: True
+     Comment: Command "keystone-manage db_sync" run
+     Started: 12:28:22.035024
+    Duration: 694.453 ms
+     Changes:   
+              ----------
+              pid:
+                  17447
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/apache2/sites-enabled/wsgi-keystone.conf
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /etc/apache2/sites-enabled/wsgi-keystone.conf is present and owned by root:root
+     Started: 12:28:22.732692
+    Duration: 1.376 ms
+     Changes:   
+----------
+          ID: /var/www/cgi-bin/keystone
+    Function: file.recurse
+      Result: True
+     Comment: The directory /var/www/cgi-bin/keystone is in the correct state
+     Started: 12:28:22.735899
+    Duration: 9.698 ms
+     Changes:   
+----------
+          ID: keystone-client
+    Function: pkg.installed
+        Name: python-keystoneclient
+      Result: True
+     Comment: Package python-keystoneclient is already installed.
+     Started: 12:28:22.745696
+    Duration: 0.724 ms
+     Changes:   
+----------
+          ID: /tmp/wait-port.sh
+    Function: file.managed
+      Result: True
+     Comment: File /tmp/wait-port.sh is in the correct state
+     Started: 12:28:22.748310
+    Duration: 11.225 ms
+     Changes:   
+----------
+          ID: wait-keystone-port
+    Function: cmd.run
+        Name: /bin/bash /tmp/wait-port.sh 30 10.0.0.9 35357
+      Result: True
+     Comment: 10.0.0.9:35357 is avaliable
+     Started: 12:28:22.762514
+    Duration: 12.924 ms
+     Changes:   
+----------
+          ID: keystone_default_tenants
+    Function: keystone.tenant_present
+        Name: admin
+      Result: True
+     Comment: Tenant "admin" already exists
+     Started: 12:28:22.778682
+    Duration: 37.324 ms
+     Changes:   
+----------
+          ID: keystone_default_tenants
+    Function: keystone.tenant_present
+        Name: demo
+      Result: True
+     Comment: Tenant "demo" already exists
+     Started: 12:28:22.818713
+    Duration: 19.91 ms
+     Changes:   
+----------
+          ID: keystone_default_tenants
+    Function: keystone.tenant_present
+        Name: service
+      Result: True
+     Comment: Tenant "service" already exists
+     Started: 12:28:22.841294
+    Duration: 21.315 ms
+     Changes:   
+----------
+          ID: keystone_default_roles
+    Function: keystone.role_present
+        Name: admin
+      Result: True
+     Comment: Role "admin" already exists
+     Started: 12:28:22.865259
+    Duration: 15.946 ms
+     Changes:   
+----------
+          ID: keystone_default_roles
+    Function: keystone.role_present
+        Name: user
+      Result: True
+     Comment: Role "user" already exists
+     Started: 12:28:22.883811
+    Duration: 15.993 ms
+     Changes:   
+----------
+          ID: keystone_admin_user
+    Function: keystone.user_present
+        Name: admin
+      Result: True
+     Comment: User "admin" is already present
+     Started: 12:28:22.901798
+    Duration: 144.967 ms
+     Changes:   
+----------
+          ID: keystone_demo_user
+    Function: keystone.user_present
+        Name: demo
+      Result: True
+     Comment: User "demo" is already present
+     Started: 12:28:23.048793
+    Duration: 144.888 ms
+     Changes:   
+----------
+          ID: keystone_keystone_service
+    Function: keystone.service_present
+        Name: keystone
+      Result: True
+     Comment: Service "keystone" already exists
+     Started: 12:28:23.195660
+    Duration: 16.194 ms
+     Changes:   
+----------
+          ID: keystone_keystone_endpoint
+    Function: keystone.endpoint_present
+        Name: keystone
+      Result: True
+     Comment: endpoint for service "keystone" already exists
+     Started: 12:28:23.215165
+    Duration: 17.425 ms
+     Changes:   
+----------
+          ID: glance-db
+    Function: mysql_database.present
+        Name: glance
+      Result: True
+     Comment: Database glance is already present
+     Started: 12:28:23.234527
+    Duration: 1.572 ms
+     Changes:   
+----------
+          ID: glance-db
+    Function: mysql_user.present
+        Name: glance
+      Result: True
+     Comment: User glance@localhost is already present with the desired password
+     Started: 12:28:23.237948
+    Duration: 1.277 ms
+     Changes:   
+----------
+          ID: glance-db
+    Function: mysql_grants.present
+      Result: True
+     Comment: Grant all privileges on glance.* to glance@localhost is already present
+     Started: 12:28:23.241238
+    Duration: 2.374 ms
+     Changes:   
+----------
+          ID: glance
+    Function: pkg.installed
+      Result: True
+     Comment: Package glance is already installed.
+     Started: 12:28:23.244609
+    Duration: 0.757 ms
+     Changes:   
+----------
+          ID: glance-registry
+    Function: pkg.installed
+        Name: glance
+      Result: True
+     Comment: Package glance is already installed.
+     Started: 12:28:23.253285
+    Duration: 0.416 ms
+     Changes:   
+----------
+          ID: /etc/glance/glance-api.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/glance/glance-api.conf is in the correct state
+     Started: 12:28:23.256336
+    Duration: 43.766 ms
+     Changes:   
+----------
+          ID: glance
+    Function: service.running
+        Name: glance-api
+      Result: True
+     Comment: Service glance-api is already enabled, and is in the desired state
+     Started: 12:28:23.304497
+    Duration: 26.06 ms
+     Changes:   
+----------
+          ID: /etc/glance/glance-registry.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/glance/glance-registry.conf is in the correct state
+     Started: 12:28:23.340581
+    Duration: 50.618 ms
+     Changes:   
+----------
+          ID: glance-registry
+    Function: service.running
+      Result: True
+     Comment: Service glance-registry is already enabled, and is in the desired state
+     Started: 12:28:23.395548
+    Duration: 26.925 ms
+     Changes:   
+----------
+          ID: glance_sync_db
+    Function: cmd.run
+        Name: glance-manage db_sync
+      Result: True
+     Comment: Command "glance-manage db_sync" run
+     Started: 12:28:23.425588
+    Duration: 865.347 ms
+     Changes:   
+              ----------
+              pid:
+                  17477
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: glance-client
+    Function: pkg.installed
+        Name: python-glanceclient
+      Result: True
+     Comment: Package python-glanceclient is already installed.
+     Started: 12:28:24.291155
+    Duration: 0.857 ms
+     Changes:   
+----------
+          ID: keystone_glance_user
+    Function: keystone.user_present
+        Name: glance
+      Result: True
+     Comment: User "glance" is already present
+     Started: 12:28:24.294096
+    Duration: 142.85 ms
+     Changes:   
+----------
+          ID: keystone_glance_service
+    Function: keystone.service_present
+        Name: glance
+      Result: True
+     Comment: Service "glance" already exists
+     Started: 12:28:24.438933
+    Duration: 16.282 ms
+     Changes:   
+----------
+          ID: keystone_glance_endpoint
+    Function: keystone.endpoint_present
+        Name: glance
+      Result: True
+     Comment: endpoint for service "glance" already exists
+     Started: 12:28:24.457243
+    Duration: 17.388 ms
+     Changes:   
+----------
+          ID: nova-db
+    Function: mysql_database.present
+        Name: nova
+      Result: True
+     Comment: Database nova is already present
+     Started: 12:28:24.476632
+    Duration: 1.513 ms
+     Changes:   
+----------
+          ID: nova-db
+    Function: mysql_user.present
+        Name: nova
+      Result: True
+     Comment: User nova@localhost is already present with the desired password
+     Started: 12:28:24.479987
+    Duration: 0.943 ms
+     Changes:   
+----------
+          ID: nova-db
+    Function: mysql_grants.present
+      Result: True
+     Comment: Grant all privileges on nova.* to nova@localhost is already present
+     Started: 12:28:24.482760
+    Duration: 2.126 ms
+     Changes:   
+----------
+          ID: nova-api
+    Function: pkg.installed
+      Result: True
+     Comment: Package nova-api is already installed.
+     Started: 12:28:24.485960
+    Duration: 0.534 ms
+     Changes:   
+----------
+          ID: add_neutron_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-end
+      Result: True
+     Comment: Accumulator extra-nova-settings-end for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:24.499838
+    Duration: 0.525 ms
+     Changes:   
+----------
+          ID: add_default_settings
+    Function: file.accumulated
+        Name: extra-nova-settings-DEFAULT
+      Result: True
+     Comment: Accumulator extra-nova-settings-DEFAULT for file /etc/nova/nova.conf was charged by text
+     Started: 12:28:24.502189
+    Duration: 0.529 ms
+     Changes:   
+----------
+          ID: /etc/nova/nova.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/nova/nova.conf updated
+     Started: 12:28:24.506531
+    Duration: 63.316 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -2,15 +2,19 @@
+                   [DEFAULT]
+                   api_paste_config = /etc/nova/api-paste.ini
+                   auth_strategy = keystone
+                  +dhcpbridge = /usr/bin/nova-dhcpbridge
+                  +dhcpbridge_flagfile = /etc/nova/nova.conf
+                   ec2_private_dns_show_ip = True
+                   enabled_apis = ec2,osapi_compute,metadata
+                  +force_dhcp_release = True
+                  +libvirt_use_virtio_for_bridges = True
+                   lock_path = /var/lock/nova
+                   logdir = /var/log/nova
+                   my_ip = 10.0.0.9
+                   rootwrap_config = /etc/nova/rootwrap.conf
+                   rpc_backend = rabbit
+                   state_path = /var/lib/nova
+                  -verbose = true
+                  +verbose = True
+                   vncserver_listen = 10.0.0.9
+                   vncserver_proxyclient_address = 10.0.0.9
+----------
+          ID: nova-api
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:24.602536
+    Duration: 254.446 ms
+     Changes:   
+              ----------
+              nova-api:
+                  True
+----------
+          ID: nova-cert
+    Function: pkg.installed
+      Result: True
+     Comment: Package nova-cert is already installed.
+     Started: 12:28:24.858262
+    Duration: 0.885 ms
+     Changes:   
+----------
+          ID: nova-cert
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:24.895057
+    Duration: 1024.548 ms
+     Changes:   
+              ----------
+              nova-cert:
+                  True
+----------
+          ID: nova-conductor
+    Function: pkg.installed
+      Result: True
+     Comment: Package nova-conductor is already installed.
+     Started: 12:28:25.920879
+    Duration: 0.892 ms
+     Changes:   
+----------
+          ID: nova-conductor
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:25.955675
+    Duration: 486.795 ms
+     Changes:   
+              ----------
+              nova-conductor:
+                  True
+----------
+          ID: nova-consoleauth
+    Function: pkg.installed
+      Result: True
+     Comment: Package nova-consoleauth is already installed.
+     Started: 12:28:26.443890
+    Duration: 0.937 ms
+     Changes:   
+----------
+          ID: nova-consoleauth
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:26.498148
+    Duration: 324.832 ms
+     Changes:   
+              ----------
+              nova-consoleauth:
+                  True
+----------
+          ID: nova-novncproxy
+    Function: pkg.installed
+      Result: True
+     Comment: Package nova-novncproxy is already installed.
+     Started: 12:28:26.824266
+    Duration: 0.948 ms
+     Changes:   
+----------
+          ID: nova-novncproxy
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:26.877951
+    Duration: 204.073 ms
+     Changes:   
+              ----------
+              nova-novncproxy:
+                  True
+----------
+          ID: nova-scheduler
+    Function: pkg.installed
+      Result: True
+     Comment: Package nova-scheduler is already installed.
+     Started: 12:28:27.083252
+    Duration: 1.236 ms
+     Changes:   
+----------
+          ID: nova-scheduler
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:27.189356
+    Duration: 1149.075 ms
+     Changes:   
+              ----------
+              nova-scheduler:
+                  True
+----------
+          ID: nova_sync_db
+    Function: cmd.run
+        Name: nova-manage db sync
+      Result: True
+     Comment: Command "nova-manage db sync" run
+     Started: 12:28:28.342229
+    Duration: 1740.698 ms
+     Changes:   
+              ----------
+              pid:
+                  17722
+              retcode:
+                  0
+              stderr:
+                  No handlers could be found for logger "oslo_config.cfg"
+              stdout:
+----------
+          ID: nova-client
+    Function: pkg.installed
+        Name: python-novaclient
+      Result: True
+     Comment: Package python-novaclient is already installed.
+     Started: 12:28:30.083172
+    Duration: 0.961 ms
+     Changes:   
+----------
+          ID: keystone_nova_user
+    Function: keystone.user_present
+        Name: nova
+      Result: True
+     Comment: User "nova" is already present
+     Started: 12:28:30.086469
+    Duration: 149.97 ms
+     Changes:   
+----------
+          ID: keystone_nova_service
+    Function: keystone.service_present
+        Name: nova
+      Result: True
+     Comment: Service "nova" already exists
+     Started: 12:28:30.238444
+    Duration: 16.193 ms
+     Changes:   
+----------
+          ID: keystone_nova_endpoint
+    Function: keystone.endpoint_present
+        Name: nova
+      Result: True
+     Comment: endpoint for service "nova" already exists
+     Started: 12:28:30.256638
+    Duration: 17.614 ms
+     Changes:   
+----------
+          ID: neutron-db
+    Function: mysql_database.present
+        Name: neutron
+      Result: True
+     Comment: Database neutron is already present
+     Started: 12:28:30.276228
+    Duration: 1.406 ms
+     Changes:   
+----------
+          ID: neutron-db
+    Function: mysql_user.present
+        Name: neutron
+      Result: True
+     Comment: User neutron@localhost is already present with the desired password
+     Started: 12:28:30.279587
+    Duration: 1.189 ms
+     Changes:   
+----------
+          ID: neutron-db
+    Function: mysql_grants.present
+      Result: True
+     Comment: Grant all privileges on neutron.* to neutron@localhost is already present
+     Started: 12:28:30.282687
+    Duration: 2.262 ms
+     Changes:   
+----------
+          ID: neutron-server
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 12:28:30.286046
+    Duration: 0.608 ms
+     Changes:   
+----------
+          ID: /etc/neutron/neutron.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/neutron.conf updated
+     Started: 12:28:30.294785
+    Duration: 38.213 ms
+     Changes:   
+              ----------
+              diff:
+                  --- 
+                  +++ 
+                  @@ -10,6 +10,9 @@
+                   rpc_backend = rabbit
+                   service_plugins = router
+                   verbose = true
+                  +
+                  +[agent]
+                  +root_helper = sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf
+                   
+                   [database]
+                   connection = mysql://neutron:5d3b74e19d33e571fecc@127.0.0.1/neutron?charset=utf8
+----------
+          ID: neutron-server
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 12:28:30.363782
+    Duration: 53.289 ms
+     Changes:   
+              ----------
+              neutron-server:
+                  True
+----------
+          ID: /etc/neutron/plugins/ml2/ml2_conf.ini
+    Function: file.managed
+      Result: True
+     Comment: File /etc/neutron/plugins/ml2/ml2_conf.ini is in the correct state
+     Started: 12:28:30.425800
+    Duration: 4.367 ms
+     Changes:   
+----------
+          ID: neutron-server_sync_db
+    Function: cmd.run
+        Name: neutron-db-manage --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini upgrade head
+      Result: True
+     Comment: Command "neutron-db-manage --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini upgrade head" run
+     Started: 12:28:30.433627
+    Duration: 1356.241 ms
+     Changes:   
+              ----------
+              pid:
+                  17758
+              retcode:
+                  0
+              stderr:
+                  INFO  [alembic.migration] Context impl MySQLImpl.
+                  INFO  [alembic.migration] Will assume non-transactional DDL.
+                  INFO  [alembic.migration] Context impl MySQLImpl.
+                  INFO  [alembic.migration] Will assume non-transactional DDL.
+              stdout:
+----------
+          ID: neutron-client
+    Function: pkg.installed
+        Name: python-neutronclient
+      Result: True
+     Comment: Package python-neutronclient is already installed.
+     Started: 12:28:31.790106
+    Duration: 0.861 ms
+     Changes:   
+----------
+          ID: keystone_neutron_user
+    Function: keystone.user_present
+        Name: neutron
+      Result: True
+     Comment: User "neutron" is already present
+     Started: 12:28:31.793007
+    Duration: 146.091 ms
+     Changes:   
+----------
+          ID: keystone_neutron_service
+    Function: keystone.service_present
+        Name: neutron
+      Result: True
+     Comment: Service "neutron" already exists
+     Started: 12:28:31.941105
+    Duration: 15.765 ms
+     Changes:   
+----------
+          ID: keystone_neutron_endpoint
+    Function: keystone.endpoint_present
+        Name: neutron
+      Result: True
+     Comment: endpoint for service "neutron" already exists
+     Started: 12:28:31.958851
+    Duration: 17.117 ms
+     Changes:   
+
+Summary
+--------------
+Succeeded: 108 (changed=13)
+Failed:      0
+--------------
+Total states run:     108

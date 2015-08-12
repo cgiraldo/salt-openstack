@@ -1,0 +1,63 @@
+{% set neutron=salt["grains.filter_by"]({
+  "Debian": {
+    "name": "neutron-server",
+    "pkg": "neutron-server",
+    "service": "neutron-server",
+    "client_pkg": "python-neutronclient",
+  },
+  "default":{
+    "name": "neutron-server",
+    "pkg": "neutron-server",
+    "service": "neutron-server",
+    "client_pkg": "python-neutronclient",
+  }
+  }) %}
+
+# Set the neutron default config
+{%- set neutron_config = {
+  "DEFAULT": {
+    "verbose": "true",
+    "auth_strategy": "keystone",
+    "rpc_backend": "rabbit",
+    "core_plugin": "ml2",
+    "service_plugins": "router",
+    "allow_overlapping_ips": "True",
+    "notify_nova_on_port_status_changes": "True",
+    "notify_nova_on_port_data_changes": "True",
+    "nova_url": "http://" + salt["pillar.get"]("nova.ip","localhost") + ":8774/v2",
+  },
+  "oslo_messaging_rabbit": {
+    "rabbit_host": salt["pillar.get"]("rabbitmq.ip","localhost"),
+    "rabbit_userid": "openstack",
+    "rabbit_password": pillar["rabbitmq.pass"]
+  },
+  "oslo_concurrency": {
+    "lock_path": "$state_path/lock"
+  },
+  "database": {
+    "connection": "mysql://neutron:" + pillar["neutron.dbpass"] + "@" + salt["pillar.get"]("mysql.ip", "localhost") + "/neutron?charset=utf8",
+  },
+  "keystone_authtoken": {
+    "auth_uri": "http://" + salt["pillar.get"]("keystone.ip","localhost") +":5000",
+    "auth_url": "http://" + salt["pillar.get"]("keystone.ip","localhost") +":35357",
+    "auth_plugin" : "password",
+    "project_domain_id" : "default",
+    "user_domain_id" : "default",
+    "project_name" : "service",
+    "username" : "neutron",
+    "password" : pillar["neutron.pass"],
+  },
+  "agent": {
+     "root_helper": "sudo /usr/bin/neutron-rootwrap /etc/neutron/rootwrap.conf",
+  },
+  "nova": {
+  "auth_url": "http://" + salt["pillar.get"]("keystone.ip","localhost") + ":35357",
+  "auth_plugin": "password",
+  "project_domain_id": "default",
+  "user_domain_id": "default",
+  "region_name": "RegionOne",
+  "project_name": "service",
+  "username": "nova",
+  "password": pillar["nova.pass"],
+ }
+} %} 

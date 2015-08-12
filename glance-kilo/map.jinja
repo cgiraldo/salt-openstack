@@ -1,0 +1,87 @@
+{% set glance=salt["grains.filter_by"]({
+  "Debian": {
+    "name": "glance",
+    "pkg": "glance",
+    "service_registry": "glance-registry",
+    "service_api": "glance-api",
+    "client_pkg": "python-glanceclient",
+  },
+  "default":{
+    "name": "glance",
+    "pkg": "glance",
+    "service_registry": "glance-registry",
+    "service_api": "glance-api",
+    "client_pkg": "python-glanceclient",
+  }
+  },merge=salt["pillar.get"]("glance:lookup")) %}
+
+# Set the glance default config
+{%- set glance_config = {
+  "DEFAULT": {
+    "debug": "false",
+    "verbose": "true",
+    "notification_driver": "noop",
+  },
+  "database": {
+    "connection": "mysql://glance:" + pillar['glance.dbpass'] + "@" + salt["pillar.get"]("mysql.host", "localhost") + "/glance?charset=utf8",
+  },
+  "keystone_authtoken": {
+    "auth_uri": "http://" + salt["pillar.get"]("keystone.ip","localhost") +":5000",
+    "auth_url": "http://" + salt["pillar.get"]("keystone.ip","localhost") +":35357",
+    "auth_plugin" : "password",
+    "project_domain_id" : "default",
+    "user_domain_id" : "default",
+    "project_name" : "service",
+    "username" : "glance",
+    "password" : pillar['glance.pass'],
+  },
+  "paste_deploy": {
+    "flavor": "keystone",
+  },
+  "glance_store": {
+    "default_store": "file",
+    "filesystem_store_datadir": "/var/lib/glance/images/",
+  }
+} %}
+
+{% for section, value in salt["pillar.get"]("glance:config", {}).iteritems() %}
+  {% if not glance_config.has_key(section) %}
+    {% do glance_config.update({ section:{} }) %}
+  {% endif %}
+  {% do glance_config[section].update(value) %}
+{% endfor %}
+
+# Set the glance-registry default config
+{%- set glance_registry_config = {
+  "DEFAULT": {
+    "debug": "false",
+    "verbose": "True",
+    "notification_driver": "noop",
+  },
+  "database": {
+    "connection": "mysql://glance:" + pillar["glance.dbpass"] + "@" + salt["pillar.get"]("mysql.host", "localhost") + "/glance?charset=utf8",
+  },
+  "keystone_authtoken": {
+    "auth_uri": "http://" + salt["pillar.get"]("keystone.ip", "localhost") +":5000",
+    "auth_url": "http://" + salt["pillar.get"]("keystone.ip", "localhost") +":35357",
+    "auth_plugin" : "password",
+    "project_domain_id" : "default",
+    "user_domain_id" : "default",
+    "project_name" : "service",
+    "username" : "glance",
+    "password" : pillar["glance.pass"],
+  },
+  "paste_deploy": {
+    "flavor": "keystone",
+  }
+} %}
+
+{% for section, value in salt["pillar.get"]("glance:config", {}).iteritems() %}
+  {% if not glance_config.has_key(section) %}
+    {% do glance_config.update({ section:{} }) %}
+  {% endif %}
+  {% do glance_config[section].update(value) %}
+{% endfor %}
+
+{#- vim:ft=sls
+-#}
